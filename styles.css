@@ -1,0 +1,114 @@
+/* Netify Styles - Main Stylesheet */
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Center the wrapper */
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f2f5;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 420px;
+  padding: 2rem 2.5rem;
+  background: #ffffff;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+}
+
+input:focus {
+  border-color: #0d6efd;
+  outline: none;
+}
+
+.password-group {
+  position: relative;
+}
+.password-group button {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button.primary {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #0d6efd;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button.primary:hover {
+  background: #0b5ed7;
+}
+
+/* Message box */
+#msgBox {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+}
+#msgBox.error {
+  background: #fdecea;
+  color: #b02a37;
+  border: 1px solid #f5c2c7;
+}
+#msgBox.success {
+  background: #e9f7ef;
+  color: #0f5132;
+  border: 1px solid #badbcc;
+}
+
+
+
