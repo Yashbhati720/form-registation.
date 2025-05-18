@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Landing Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LZN37fNK5xIyik5+QdMI+JD0CMvODfH6xvGp65HfQh37Sgv6KvBp0N0jOzJe/u4F" crossorigin="anonymous">
+
+    <style>
+      /* Custom Styles */
+      body {
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+        scroll-behavior: smooth;
+      }
+      .jumbotron{
+        background: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%);
+        color: #ffffff;
+        padding: 6rem 1rem;
+        text-align: center;
+        border-radius: .75rem;
+      }
+      .feature-card i{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        color: #0d6efd;
+      }
+      footer{
+        background-color: #f8f9fa;
+      }
+    </style>
+</head>
+<body>
+
+  <!-- Header & Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">MyApp</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#features">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#download">Download</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="mt-5 pt-5">
+    <!-- Jumbotron -->
+    <section class="jumbotron container mt-5" role="banner">
+      <h1 class="display-4 fw-bold">Experience Productivity Redefined</h1>
+      <p class="lead">Our app helps you organize, track, and achieve your goals effortlessly, wherever you are.</p>
+      <a class="btn btn-lg btn-light mt-3" href="#download" role="button">Get Started</a>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5" aria-labelledby="features-heading">
+      <div class="container">
+        <h2 id="features-heading" class="text-center mb-5">Key Features</h2>
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <article class="card h-100 text-center feature-card p-4 border-0 shadow-sm">
+              <i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>
+              <h3 class="h5">Fast Performance</h3>
+              <p>Optimized algorithms ensure lightning‑fast response times to keep you moving.</p>
+            </article>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-md-4">
+            <article class="card h-100 text-center feature-card p-4 border-0 shadow-sm">
+              <i class="bi bi-shield-lock-fill" aria-hidden="true"></i>
+              <h3 class="h5">Secure Data</h3>
+              <p>Advanced encryption keeps your data safe and secure at all times.</p>
+            </article>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-md-4">
+            <article class="card h-100 text-center feature-card p-4 border-0 shadow-sm">
+              <i class="bi bi-cloud-arrow-down-fill" aria-hidden="true"></i>
+              <h3 class="h5">Cloud Sync</h3>
+              <p>Seamlessly sync your data across all devices to stay productive anywhere.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="py-5 bg-light" aria-labelledby="download-heading">
+      <div class="container text-center">
+        <h2 id="download-heading" class="mb-4">Ready to level up?</h2>
+        <p class="lead mb-4">Download the app now and take control of your workflow.</p>
+        <a href="#" class="btn btn-primary btn-lg">Download for iOS</a>
+        <a href="#" class="btn btn-outline-primary btn-lg ms-2">Download for Android</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-4" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <h5>MyApp</h5>
+          <p class="small">© <span id="year"></span> MyApp Inc. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item"><a href="#features" class="text-decoration-none small">Features</a></li>
+            <li class="list-inline-item"><a href="#download" class="text-decoration-none small">Download</a></li>
+            <li class="list-inline-item"><a href="#contact" class="text-decoration-none small">Contact</a></li>
+            <li class="list-inline-item"><a href="#" class="text-decoration-none small">Privacy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS & dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-IexnSD6YpJX+epszVZn09Y1B1tmzFqH/AFpHO1A1GlCwPvi8x6HqSq7pbhvP8BpN" crossorigin="anonymous"></script>
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+  <!-- Dynamic Year -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
